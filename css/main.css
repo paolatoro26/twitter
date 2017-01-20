@@ -1,0 +1,26 @@
+
+h3
+{
+	margin: 0;
+	padding: 5px;
+}
+header
+{
+	background-color: #E6E6E6;
+}
+textarea
+{
+	width: 100%
+}
+.add
+{
+	margin-bottom: 25px
+}
+section
+{
+	margin-top: 5px
+}
+[class*="tarea"]{
+	background-color:#E6E6E6;
+
+}
