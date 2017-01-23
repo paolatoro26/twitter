@@ -1,13 +1,15 @@
 
-h3
-{
-	margin: 0;
-	padding: 5px;
-}
+/*-----------HEADER---------*/
 header
 {
 	background-color: #E6E6E6;
 }
+h3, 
+{
+	margin: 0;
+	padding: 5px;
+}
+/*--------------ADD---------*/
 textarea
 {
 	width: 100%
@@ -16,11 +18,33 @@ textarea
 {
 	margin-bottom: 25px
 }
+/*-------------LISTA---------*/
 section
 {
 	margin-top: 5px
 }
-[class*="tarea"]{
-	background-color:#E6E6E6;
+
+ ul
+ {
+ 	padding: 12px
+ }
+li
+{
+	list-style: none;
+	background: #E6E6E6;
+	margin-top: 5px
 
 }
+a
+{
+	text-decoration: none;
+	color: black
+}
+a:hover
+{
+	text-decoration: line-through;
+	color: black;
+}
+
+
+
