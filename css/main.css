@@ -1,11 +1,13 @@
 
+
 /*-----------HEADER---------*/
 header
 {
-	background-color: #E6E6E6;
+	background-color: rgba(324,45,3,.4);
 }
 h3, 
 {
+	font-family: Garamond;
 	margin: 0;
 	padding: 5px;
 }
@@ -31,23 +33,18 @@ section
 li
 {
 	list-style: none;
-	background: #E6E6E6;
-	margin-top: 5px
-
-}
-a
-{
-	text-decoration: none;
-	color: black
-}
-a:hover
-{
-	text-decoration: line-through;
-	color: black;
+	border: #E6E6E6 solid 5px;
+	margin-top: 5px;
+	padding: 10px
 }
 
-li .icono
-{
-	width: 10px
-}
+ #tachin
+ {
+ 	color: red;
+ 	height: 100%
+ }
+ li span
+ {
+ 	margin-left:5px
+ }
 

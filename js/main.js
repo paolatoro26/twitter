@@ -12,7 +12,8 @@ function agregarTarea()
 		var	span=document.createElement("span");
 		span.innerHTML=input.value;
 		var iTacho= document.createElement("i");
-		iTacho.className="fa-trash , pull-right","icono";	
+		iTacho.className="fa-trash , pull-right";
+		iTacho.id="tachin"	;
 		item.appendChild(checkbox);
 		item.appendChild(span);
 		item.appendChild(iTacho);
