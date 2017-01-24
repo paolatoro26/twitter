@@ -5,7 +5,7 @@ header
 {
 	background-color: rgba(324,45,3,.4);
 }
-h3, 
+h4, 
 {
 	font-family: Garamond;
 	margin: 0;
@@ -14,7 +14,9 @@ h3,
 /*--------------ADD---------*/
 textarea
 {
-	width: 100%
+	width: 100%;
+	border-radius: 15px;
+	padding: 10px
 }
 .add
 {
@@ -33,18 +35,19 @@ section
 li
 {
 	list-style: none;
-	border: #E6E6E6 solid 5px;
+	border: solid 5px;
+	border-color: rgba(324,45,3,.2);
 	margin-top: 5px;
 	padding: 10px
 }
 
- #tachin
- {
- 	color: red;
- 	height: 100%
- }
  li span
  {
  	margin-left:5px
  }
-
+ #tachin
+ {
+ 	
+ 	color: red;
+ 	height: 100%
+ }
