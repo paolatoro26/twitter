@@ -1,54 +1,46 @@
 
 var lista=document.getElementById("lista");
-var input=document.getElementById("mensaje");
-var boton=document.getElementById("boton");
-
-
-boton.addEventListener("click", onButtonClick);
-
-function onButtonClick()
-{
-	agregarTarea();
-}
 
 function agregarTarea()
 {
-	var tarea=input.value;
-	var vacio=input.value;
-	var	item=document.createElement("li");
-	var	enlace=document.createElement("a");
-		contenido=document.createTextNode(tarea); 
-	
-
+	var input=document.getElementById("mensaje");
+	if(input.value.length != 0)
+	{
+		var	item=document.createElement("li");
+		var checkbox = document.createElement("input");
+		checkbox.setAttribute("type","checkbox");
+		var	span=document.createElement("span");
+		span.innerHTML=input.value;
+		var iTacho= document.createElement("i");
+		iTacho.className="fa-trash , pull-right","icono";	
+		item.appendChild(checkbox);
+		item.appendChild(span);
+		item.appendChild(iTacho);
+		lista.appendChild(item);		
+		iTacho.addEventListener("click", eliminarItem);
+		checkbox.addEventListener("click", tachar);
 		input.value="";
 		input.focus();
-
-		lista.appendChild(item);
-
-		lista.addEventListener("click", onItemClick);
-		//lista.innerHTML += "<li>" + mensaje + "</li>";
-
-			
-	
-	if(vacio===""){
-		input.setAttribute("placeholder","Agrega tarea valida");
-		input.style.border ="solid 3px red";
-		return false;
-		}else{
-			input.setAttribute("placeholder","Añade tu tarea nueva");
-			input.style.border="solid 3px green";
-		}
-
-	enlace.appendChild(contenido);
-	enlace.setAttribute("href","#")
-	item.appendChild(enlace);
-
+	}
+	else
+		alert("Por favor, ingrese tarea valida")
 }
 
-function onItemClick(evt)
-{
-	console.log(evt.target);
-	evt.target.parentNode.removeChild(evt.target);
+	function eliminarItem(evt)
+	{
+		var li=evt.target.parentNode;
+		lista.removeChild(li);
+	}
+
+	function tachar(evt)
+	{
+	var check=evt.target;
+	if(check.checked)
+	{
+		check.nextSibling.setAttribute("style","text-decoration: line-through");
+	}
+	else
+	{
+		check.nextSibling.setAttribute("style","text-decoration: none");
+	}	
 }
-
-

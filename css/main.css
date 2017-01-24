@@ -46,5 +46,8 @@ a:hover
 	color: black;
 }
 
-
+li .icono
+{
+	width: 10px
+}
 
