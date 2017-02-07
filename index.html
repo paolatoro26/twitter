@@ -10,21 +10,20 @@
 <body>
 	<header>
 		<div class="container-fluid">
-			<h4 class="text-center"> <b>TO DO APP</b></h4>
+			<h3 class="text-center"> <b>TO DO APP</b></h3>
 		</div>
-		
 	</header>
-	<section class="add">
-		<div class="container-fluid">
+	<section class="add">    
+		<div class="listas">
 			<textarea onfocus() name="" id="mensaje" cols="30" rows="6" placeholder="Añade tu nueva tarea"></textarea>
-			<button  id="boton" onclick="agregarTarea()" class="btn btn-primary btn-sm"><i class="fa fa-plus" ></i> Añadir tarea</button>		
-		</div>
+			<button  id="boton" class="btn btn-primary btn-sm"><i class="fa fa-plus" ></i> Añadir tarea</button>
+			<ul id="lista">
+				<!-- lista -
+				<li><input type="checkbox"> hola <i class="fa fa-trash-o pull-right" aria-hidden="true"></i></li>
+				-->
+			</ul>
+		</div>	
 	</section>
-
-	<ul id="lista">
-	
-	</ul>
-	
 <script src="js/main.js"></script>
 </body>
 </html>

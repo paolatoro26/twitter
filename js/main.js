@@ -1,5 +1,21 @@
+//Codigo con objetos
 
-var lista=document.getElementById("lista");
+var boton = document.getElementById("boton");
+
+boton.addEventListener("Click", agregarLista)
+
+function agregarLista()
+{
+	var mensaje=document.getElementById("mensaje").value;
+	var lista= document.getElementById("lista");
+	lista.innerHTML = '<li>'+'<input type="checkbox"> '+ mensaje+
+				'<i class="fa fa-trash-o pull-right" aria-hidden="true"></i>'+'</li>';
+}
+
+
+//Codigo con funciones
+
+/*var lista=document.getElementById("lista");
 
 function agregarTarea()
 {
@@ -12,7 +28,7 @@ function agregarTarea()
 		var	span=document.createElement("span");
 		span.innerHTML=input.value;
 		var iTacho= document.createElement("i");
-		iTacho.className="fa-trash , pull-right";
+		iTacho.className="glyphicon-trash , pull-right";
 		iTacho.id="tachin"	;
 		item.appendChild(checkbox);
 		item.appendChild(span);
@@ -44,4 +60,4 @@ function agregarTarea()
 	{
 		check.nextSibling.setAttribute("style","text-decoration: none");
 	}	
-}
+}*/
